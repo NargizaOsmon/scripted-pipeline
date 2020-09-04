@@ -21,7 +21,7 @@ else if(params.environment == "prod"){
 node{
     stage("Pull Repo"){
         cleanWs()
-        git url: 'https://github.com/ikambarov/terraform-vpc.git'
+        git url: 'https://github.com/NargizaOsmon/terraform-vpc.git'
     }
 
     withCredentials([usernamePassword(credentialsId: 'jenkins-aws-access-key', passwordVariable: 'AWS_SECRET_ACCESS_KEY', usernameVariable: 'AWS_ACCESS_KEY_ID')]) {
