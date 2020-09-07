@@ -22,7 +22,7 @@ else {
     error("SOURCE_PROJECT_NAME Name Doesnt Match RegEx")
 }
 def tf_vars = """
-    s3_bucket = \"jenkins-terraform-evolvecybertraining\"
+    s3_bucket = \"jenkins-terraform-class-nargiza\"
     s3_folder_project = \"terraform_ec2\"
     s3_folder_region = \"us-east-1\"
     s3_folder_type = \"class\"
